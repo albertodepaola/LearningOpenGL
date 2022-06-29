@@ -5,6 +5,8 @@
 
 #include <glad/glad.h>
 
+#include <glm/glm.hpp>
+
 #include <string>
 #include <fstream>
 #include <sstream>
@@ -95,6 +97,11 @@ public:
     void setFloat4(const std::string& name, float value1, float value2, float value3, float value4) const
     {
         glUniform4f(glGetUniformLocation(ID, name.c_str()), value1, value2, value3, value4);
+    }
+
+    void setMat4(const std::string& name, glm::mat4 matrix) const
+    {
+        glUniformMatrix4fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, glm::value_ptr(matrix));
     }
 
 private:
