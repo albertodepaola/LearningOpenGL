@@ -449,14 +449,6 @@
     <ClInclude Include="src\utils\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="resources\shaders\VertexShader-3.3.hlsl">
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
-    </FxCompile>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="resources\shaders\Shader-3.3.fs" />
     <None Include="resources\shaders\Shader-3.3.vs" />
     <None Include="src\utils\glm\detail\func_common.inl" />

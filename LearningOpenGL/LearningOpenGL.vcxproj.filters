@@ -883,9 +883,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="resources\shaders\VertexShader-3.3.hlsl" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="resources\shaders\Shader-3.3.vs" />
     <None Include="resources\shaders\Shader-3.3.fs" />
     <None Include="src\utils\glm\detail\func_common.inl">
